@@ -33,9 +33,14 @@ body {
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .header.active .header-logo {
-	width: 60px;
+	width: 0;
+	opacity: 0;
 }
 .header-logo img {
 	display: block;
@@ -63,12 +68,15 @@ body {
 	text-align: left;
 	font-size: 18px;
 	color: #000000;
+	font-family: 'FuturaDemi';
 }
 .header-text .orange {
 	color: #e85724;
+	font-family: 'FuturaFuturisLightC';
 }
 .header-text .gray {
 	color: #7a8080;
+	font-family: 'FuturaFuturisLightC';
 }
 .header-top-right p {
 	display: inline-block;
@@ -79,10 +87,11 @@ body {
 	color: #7a8080;
 	text-align: left;
 	font-size: 18px;
+	font-family: 'FuturaFuturisLightC';
 }
 .header-top-right p a, .header-top-right p span {
 	color: #000000;
-	font-weight: 600;
+	font-family: 'FuturaDemi';
 }
 .header-btn {
 	display: inline-block;
@@ -93,6 +102,15 @@ body {
 	border: 1px solid rgb(227, 228, 227);
 	border-radius: 4px;
 	margin-left: 10px;
+	font-family: 'FuturaFuturisLightC';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.header-btn:hover {
+	border-color: rgb(255, 93, 36);
+	color: rgb(255, 93, 36);
 }
 .header-top {
 	margin-bottom: 15px;
@@ -100,9 +118,43 @@ body {
 }
 .header-bottom {
 	padding-left: 150px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
 }
 .header.active .header-bottom {
 	padding-left: 90px;
+}
+.header-scroll-logo {
+	display: block;
+	width: 0;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+	overflow: hidden;
+}
+.header.active .header-scroll-logo {
+	width: 60px;
+	-webkit-transition: all 0.3s 0.5s;
+	-moz-transition: all 0.3s 0.5s;
+	-ms-transition: all 0.3s 0.5s;
+	transition: all 0.3s 0.5s;
+}
+.header-scroll-logo img {
+	display: block;
+	width: 60px;
+	height: 60px;
 }
 .header-nav {
 	display: inline-block;
@@ -125,6 +177,19 @@ body {
 	display: block;
 	padding: 0 5px;
 	font-size: 15px;
+	font-family: 'FuturaFuturisLightC';
+}
+.header.active .header-nav ul li {
+	font-size: 16px;
+}
+.header .header-nav ul li a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.header .header-nav ul li a:hover {
+	color: rgb(255, 93, 36);
 }
 .header-basket {
 	display: inline-block;
@@ -139,7 +204,7 @@ body {
 	vertical-align: middle;
 	margin-right: 10px;
 	font-size: 15px;
-	font-weight: 600;
+	font-family: 'FuturaDemi';
 }
 .header-basket a {
 	display: inline-block;
@@ -148,6 +213,14 @@ body {
 	background-color: rgb(255, 93, 36);
 	border-radius: 4px;
 	color: #ffffff;
+	font-family: 'FuturaDemi';
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.header-basket a:hover {
+	background-color: rgb(228, 68, 12);
 }
 
 .b-1 {
